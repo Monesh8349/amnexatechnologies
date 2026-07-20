@@ -61,11 +61,31 @@ document.addEventListener('DOMContentLoaded', function() {
   // Mobile nav toggle
   const hamburger = document.getElementById('hamburger');
   const mobileNav = document.getElementById('mobileNav');
-  if (hamburger && mobileNav) {
-    hamburger.addEventListener('click', () => {
+  const mobileNavOverlay = document.getElementById('mobileNavOverlay');
+  if (hamburger && mobileNav && mobileNavOverlay) {
+    hamburger.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
       mobileNav.classList.toggle('open');
+      mobileNavOverlay.classList.toggle('open');
     });
   }
+  
+  // Close mobile nav when clicking overlay
+  if (mobileNavOverlay) {
+    mobileNavOverlay.addEventListener('click', () => {
+      mobileNav.classList.remove('open');
+      mobileNavOverlay.classList.remove('open');
+    });
+  }
+  
+  // Close mobile nav on window resize
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768 && mobileNav && mobileNav.classList.contains('open')) {
+      mobileNav.classList.remove('open');
+      if (mobileNavOverlay) mobileNavOverlay.classList.remove('open');
+    }
+  });
 
   // Loading Screen
   const loadingScreen = document.getElementById('loading-screen');
@@ -153,7 +173,9 @@ document.addEventListener('DOMContentLoaded', function() {
 // Global function for mobile nav close
 function closeMobileNav() {
   const mobileNav = document.getElementById('mobileNav');
+  const mobileNavOverlay = document.getElementById('mobileNavOverlay');
   if (mobileNav) mobileNav.classList.remove('open');
+  if (mobileNavOverlay) mobileNavOverlay.classList.remove('open');
 }
 
 // Portfolio Modal
