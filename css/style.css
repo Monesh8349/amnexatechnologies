@@ -1604,9 +1604,10 @@ a {
 
 .page-hero p {
 	font-size: 16px;
-	color: #94a3b8;
-	max-width: 1285px;
-	line-height: 1.7;
+    color: #94a3b8;
+    max-width: 600px;
+    line-height: 1.7;
+    margin: 0 auto;
 }
 
 .service-icon-large {
