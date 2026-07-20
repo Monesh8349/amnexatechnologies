@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - AMNEXA Technologies | Software Development Company in Indore</title>
+  <meta name="description" content="Learn about AMNEXA Technologies - a leading software development company in Indore, India. We specialize in web development, app development, Django, React, Python, and digital solutions." />
+  <meta name="keywords" content="about AMNEXA Technologies, software company in Indore, IT company in India, web development company, Django development, React development, Python development" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="AMNEXA Technologies" />
+  <link rel="canonical" href="https://amnexatechnologies.in/about" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="About Us - AMNEXA Technologies | Software Development Company in Indore" />
+  <meta property="og:description" content="Learn about AMNEXA Technologies - a leading software development company in Indore, India. We specialize in web development, app development, Django, React, Python, and digital solutions." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://amnexatechnologies.in/about" />
+  <meta property="og:image" content="https://amnexatechnologies.in/img/og-image.jpg" />
+  <meta property="og:site_name" content="AMNEXA Technologies" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About Us - AMNEXA Technologies | Software Development Company in Indore" />
+  <meta name="twitter:description" content="Learn about AMNEXA Technologies - a leading software development company in Indore, India. We specialize in web development, app development, Django, React, Python, and digital solutions." />
+  <meta name="twitter:image" content="https://amnexatechnologies.in/img/og-image.jpg" />
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "AMNEXA Technologies",
+    "url": "https://amnexatechnologies.in",
+    "logo": "https://amnexatechnologies.in/img/logo.png",
+    "description": "AMNEXA Technologies is a leading software development company in Indore, India specializing in web development, app development, Django, React, Python, and digital solutions.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Indore",
+      "addressRegion": "Madhya Pradesh",
+      "addressCountry": "IN"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+918349888244",
+      "contactType": "customer service",
+      "email": "amnexatechnologies@gmail.com"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/company/amnexatechnologies",
+      "https://www.instagram.com/amnexatechnologies"
+    ]
+  }
+  </script>
+
+  <!-- Preconnect & Preload -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://unpkg.com" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" as="style" />
+  <link rel="preload" href="css/style.css" as="style" />
+  <link rel="preload" href="js/main.js" as="script" />
+  <link rel="preload" href="img/favicon.png" as="image" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="loading-content">
+      <div class="loading-logo">A</div>
+      <div class="loading-spinner"></div>
+    </div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-logo">
+        <div class="logo-icon">A</div>
+        <div class="logo-text"><span>AMNEXA</span> Technologies</div>
+      </a>
+      <ul class="navbar-links">
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="classes.html">Learn Technologies</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-outline">Start Project</a>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+    <div class="mobile-nav" id="mobileNav">
+      <div class="mobile-nav-header">
+        <div class="navbar-logo">
+          <div class="logo-icon">A</div>
+          <div class="logo-text"><span>AMNEXA</span> Technologies</div>
+        </div>
+        <div class="mobile-nav-close" onclick="closeMobileNav()">✕</div>
+      </div>
+      <a href="about.html" onclick="closeMobileNav()">About</a>
+      <a href="services.html" onclick="closeMobileNav()">Services</a>
+      <a href="classes.html" onclick="closeMobileNav()">Learn Technologies</a>
+      <a href="portfolio.html" onclick="closeMobileNav()">Portfolio</a>
+      <a href="contact.html" onclick="closeMobileNav()">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <div class="container">
+      <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="index.html" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <span itemprop="name">About</span>
+          <meta itemprop="position" content="2" />
+        </li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <div class="container">
+      <span class="page-hero-label">About Us</span>
+      <h1>Your Trusted <span class="gradient-text">Technology Partner</span></h1>
+      <p>AMNEXA Technologies is a professional digital solutions company serving organizations, businesses, and freelancers worldwide. We specialize in delivering high-quality web development, app development, dashboards, video editing, poster design, and thumbnail design services.</p>
+    </div>
+  </div>
+
+  <!-- Our Story -->
+  <section class="section">
+    <div class="container">
+      <div class="about-text" data-aos="fade-up">
+        <span class="section-label">Our Story</span>
+        <h2>Building Digital <span class="gradient-text">Excellence</span></h2>
+        <p>Founded with a vision to empower businesses through technology, AMNEXA Technologies is a new digital solutions provider based in Indore, India. Our mission is simple: to help businesses of all sizes leverage the power of technology to achieve their goals.</p>
+        <p>We specialize in web development, app development, video editing, poster design, and data analytics solutions. Our team combines technical expertise with creative excellence to deliver solutions that meet and exceed expectations.</p>
+        <p>We believe in building long-term partnerships with our clients. When you work with AMNEXA Technologies, you're not just getting a service provider – you're getting a dedicated technology partner committed to your success.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission Vision Values -->
+  <section class="section" style="background: linear-gradient(180deg, #070b14 0%, #0e1628 100%);">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Our Foundation</span>
+        <h2 class="section-title">Mission, Vision & <span class="gradient-text">Values</span></h2>
+      </div>
+      <div class="mvv-grid">
+        <div class="mvv-card" data-aos="fade-up" data-aos-delay="100">
+          <span class="mvv-icon">🎯</span>
+          <h3>Our Mission</h3>
+          <p>To deliver exceptional digital solutions that empower businesses to achieve their full potential through innovative technology, creative design, and unwavering commitment to quality.</p>
+        </div>
+        <div class="mvv-card" data-aos="fade-up" data-aos-delay="200">
+          <span class="mvv-icon">🔭</span>
+          <h3>Our Vision</h3>
+          <p>To be the go-to technology partner for organizations seeking innovative, reliable, and scalable digital solutions, recognized globally for excellence and customer satisfaction.</p>
+        </div>
+        <div class="mvv-card" data-aos="fade-up" data-aos-delay="300">
+          <span class="mvv-icon">💎</span>
+          <h3>Our Values</h3>
+          <p>Quality, innovation, transparency, and building lasting partnerships. We believe in doing things right the first time and continuously improving to deliver the best results.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Why Choose Us</span>
+        <h2 class="section-title">What Makes Us <span class="gradient-text">Different</span></h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card" data-aos="fade-up" data-aos-delay="100">
+          <span class="why-icon">🛠️</span>
+          <h3>Customized Solutions</h3>
+          <p>Every solution is designed according to your unique business needs — no templates, no shortcuts. We build from the ground up to ensure perfect fit.</p>
+        </div>
+        <div class="why-card" data-aos="fade-up" data-aos-delay="200">
+          <span class="why-icon">⚡</span>
+          <h3>Modern Technology</h3>
+          <p>Using latest tools and frameworks to build fast, reliable and future-proof solutions that scale with your business.</p>
+        </div>
+        <div class="why-card" data-aos="fade-up" data-aos-delay="300">
+          <span class="why-icon">🔍</span>
+          <h3>Transparent Process</h3>
+          <p>Clear communication and progress updates from idea to final delivery. No hidden costs, no surprises.</p>
+        </div>
+        <div class="why-card" data-aos="fade-up" data-aos-delay="400">
+          <span class="why-icon">🤝</span>
+          <h3>Long Term Partnership</h3>
+          <p>We support your business beyond development — your growth is our mission. We're here for the long haul.</p>
+        </div>
+        <div class="why-card" data-aos="fade-up" data-aos-delay="500">
+          <span class="why-icon">💰</span>
+          <h3>Competitive Pricing</h3>
+          <p>High-quality solutions at competitive prices. We deliver value that exceeds your investment.</p>
+        </div>
+        <div class="why-card" data-aos="fade-up" data-aos-delay="600">
+          <span class="why-icon">🌍</span>
+          <h3>Global Reach</h3>
+          <p>Serving clients worldwide with remote-first approach. Distance is never a barrier to quality.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="section" style="background: linear-gradient(180deg, #070b14 0%, #0e1628 100%);">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Our Team</span>
+        <h2 class="section-title">Meet the <span class="gradient-text">Experts</span></h2>
+        <p class="section-subtitle">A team of passionate developers, designers, and strategists dedicated to your success.</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="team-avatar">👨‍💻</div>
+          <h3>Monesh Sharma</h3>
+          <span class="team-role">Founder & CEO</span>
+          <p>Full-stack developer with expertise in Django, React, and cloud technologies.</p>
+        </div>
+        <div class="team-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="team-avatar">👩‍💻</div>
+          <h3>Priya Patel</h3>
+          <span class="team-role">Lead Developer</span>
+          <p>Expert in Python, Django, and backend architecture.</p>
+        </div>
+        <div class="team-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="team-avatar">👨‍🎨</div>
+          <h3>Rahul Verma</h3>
+          <span class="team-role">UI/UX Designer</span>
+          <p>Creative designer specializing in modern interfaces and user experiences.</p>
+        </div>
+        <div class="team-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="team-avatar">👩‍🎨</div>
+          <h3>Anjali Singh</h3>
+          <span class="team-role">Video Editor</span>
+          <p>Professional video editor with expertise in Premiere Pro and After Effects.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="container" style="text-align:center;" data-aos="fade-up">
+      <span class="section-label">Ready to Work Together?</span>
+      <h2 class="section-title">Let's Build Something <span class="gradient-text">Amazing</span></h2>
+      <p class="section-subtitle" style="margin:0 auto 36px;">Have a project in mind? Let's discuss how we can help you achieve your goals.</p>
+      <a href="contact.html" class="btn btn-primary">Start Your Project →</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="navbar-logo">
+            <div class="logo-icon">A</div>
+            <div class="logo-text"><span>AMNEXA</span> Technologies</div>
+          </div>
+          <p>Your technology partner for digital growth. We build modern, scalable solutions for growing businesses.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-btn" aria-label="LinkedIn">in</a>
+            <a href="#" class="social-btn" aria-label="Instagram">ig</a>
+            <a href="https://wa.me/918349888244" class="social-btn" aria-label="WhatsApp">wa</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Web Development</a></li>
+            <li><a href="services.html">App Development</a></li>
+            <li><a href="services.html">Data Analytics</a></li>
+            <li><a href="services.html">Video Editing</a></li>
+            <li><a href="services.html">WordPress</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="technologies.html">Technologies</a></li>
+            <li><a href="industries.html">Industries</a></li>
+            <li><a href="career.html">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms & Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 AMNEXA TECHNOLOGIES. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Buttons -->
+  <a href="https://wa.me/918349888244" class="whatsapp-btn" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">💬</a>
+  <a href="tel:+918349888244" class="call-btn" aria-label="Call Us">📞</a>
+  <button class="back-to-top" id="backToTop" aria-label="Back to Top">↑</button>
+  <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle Dark Mode">🌙</button>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

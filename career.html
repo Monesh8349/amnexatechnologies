@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Careers - AMNEXA Technologies | Join Our Team</title>
+  <meta name="description" content="Join AMNEXA Technologies and build your career with us. We're hiring developers, designers, and digital professionals. Explore open positions and apply today." />
+  <meta name="keywords" content="careers, job openings, software developer jobs, web developer jobs, Django developer jobs, React developer jobs, Python developer jobs, IT jobs in Indore" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="AMNEXA Technologies" />
+  <link rel="canonical" href="https://amnexatechnologies.in/career" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Careers - AMNEXA Technologies | Join Our Team" />
+  <meta property="og:description" content="Join AMNEXA Technologies and build your career with us. We're hiring developers, designers, and digital professionals. Explore open positions and apply today." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://amnexatechnologies.in/career" />
+  <meta property="og:image" content="https://amnexatechnologies.in/img/og-image.jpg" />
+  <meta property="og:site_name" content="AMNEXA Technologies" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Careers - AMNEXA Technologies | Join Our Team" />
+  <meta name="twitter:description" content="Join AMNEXA Technologies and build your career with us. We're hiring developers, designers, and digital professionals. Explore open positions and apply today." />
+  <meta name="twitter:image" content="https://amnexatechnologies.in/img/og-image.jpg" />
+
+  <!-- Preconnect & Preload -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://unpkg.com" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" as="style" />
+  <link rel="preload" href="css/style.css" as="style" />
+  <link rel="preload" href="js/main.js" as="script" />
+  <link rel="preload" href="img/favicon.png" as="image" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="loading-content">
+      <div class="loading-logo">A</div>
+      <div class="loading-spinner"></div>
+    </div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-logo">
+        <div class="logo-icon">A</div>
+        <div class="logo-text"><span>AMNEXA</span> Technologies</div>
+      </a>
+      <ul class="navbar-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="technologies.html">Technologies</a></li>
+        <li><a href="industries.html">Industries</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="career.html" class="btn btn-primary">We're Hiring</a>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+    <div class="mobile-nav" id="mobileNav">
+      <div class="mobile-nav-header">
+        <div class="navbar-logo">
+          <div class="logo-icon">A</div>
+          <div class="logo-text"><span>AMNEXA</span> Technologies</div>
+        </div>
+        <div class="mobile-nav-close" onclick="closeMobileNav()">✕</div>
+      </div>
+      <a href="about.html" onclick="closeMobileNav()">About</a>
+      <a href="services.html" onclick="closeMobileNav()">Services</a>
+      <a href="classes.html" onclick="closeMobileNav()">Learn Technologies</a>
+      <a href="portfolio.html" onclick="closeMobileNav()">Portfolio</a>
+      <a href="technologies.html" onclick="closeMobileNav()">Technologies</a>
+      <a href="industries.html" onclick="closeMobileNav()">Industries</a>
+      <a href="blog.html" onclick="closeMobileNav()">Blog</a>
+      <a href="contact.html" onclick="closeMobileNav()">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <div class="container">
+      <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="index.html" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <span itemprop="name">Careers</span>
+          <meta itemprop="position" content="2" />
+        </li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <div class="container">
+      <span class="page-hero-label">Join Our Team</span>
+      <h1>Build Your Career at <span class="gradient-text">AMNEXA</span></h1>
+      <p>Work with cutting-edge technologies, solve real problems, and grow your career with a team that values innovation and excellence.</p>
+    </div>
+  </div>
+
+  <!-- Why Work With Us -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Why Work With Us</span>
+        <h2 class="section-title">Benefits of <span class="gradient-text">Joining Us</span></h2>
+      </div>
+      <div class="benefits-grid">
+        <div class="benefit-card" data-aos="fade-up" data-aos-delay="100">
+          <span class="benefit-icon">🚀</span>
+          <h3>Growth Opportunities</h3>
+          <p>Continuous learning, skill development, and career advancement opportunities.</p>
+        </div>
+        <div class="benefit-card" data-aos="fade-up" data-aos-delay="200">
+          <span class="benefit-icon">💰</span>
+          <h3>Competitive Salary</h3>
+          <p>Market-competitive compensation and performance-based bonuses.</p>
+        </div>
+        <div class="benefit-card" data-aos="fade-up" data-aos-delay="300">
+          <span class="benefit-icon">🏠</span>
+          <h3>Remote Work</h3>
+          <p>Flexible work arrangements with remote-first culture.</p>
+        </div>
+        <div class="benefit-card" data-aos="fade-up" data-aos-delay="400">
+          <span class="benefit-icon">🎓</span>
+          <h3>Learning Budget</h3>
+          <p>Annual budget for courses, certifications, and conferences.</p>
+        </div>
+        <div class="benefit-card" data-aos="fade-up" data-aos-delay="500">
+          <span class="benefit-icon">🏖️</span>
+          <h3>Paid Time Off</h3>
+          <p>Generous vacation days and paid holidays.</p>
+        </div>
+        <div class="benefit-card" data-aos="fade-up" data-aos-delay="600">
+          <span class="benefit-icon">🏥</span>
+          <h3>Health Benefits</h3>
+          <p>Comprehensive health insurance and wellness programs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Open Positions -->
+  <section class="section" style="background: linear-gradient(180deg, #070b14 0%, #0e1628 100%);">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Open Positions</span>
+        <h2 class="section-title">Current <span class="gradient-text">Job Openings</span></h2>
+        <p class="section-subtitle">We're always looking for talented individuals to join our team.</p>
+      </div>
+      <div class="jobs-grid">
+        <div class="job-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="job-header">
+            <h3>Senior Django Developer</h3>
+            <span class="job-type">Full-time</span>
+          </div>
+          <div class="job-details">
+            <span class="job-location">📍 Remote / Indore</span>
+            <span class="job-salary">💰 ₹8-12 LPA</span>
+          </div>
+          <p>We're looking for an experienced Django developer to lead backend development projects and mentor junior developers.</p>
+          <div class="job-skills">
+            <span class="skill-tag">Django</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">REST APIs</span>
+          </div>
+          <a href="contact.html" class="btn btn-outline">Apply Now</a>
+        </div>
+        <div class="job-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="job-header">
+            <h3>React Developer</h3>
+            <span class="job-type">Full-time</span>
+          </div>
+          <div class="job-details">
+            <span class="job-location">📍 Remote / Indore</span>
+            <span class="job-salary">💰 ₹6-10 LPA</span>
+          </div>
+          <p>Join our frontend team to build modern, responsive user interfaces using React and related technologies.</p>
+          <div class="job-skills">
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">Redux</span>
+          </div>
+          <a href="contact.html" class="btn btn-outline">Apply Now</a>
+        </div>
+        <div class="job-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="job-header">
+            <h3>Video Editor</h3>
+            <span class="job-type">Full-time</span>
+          </div>
+          <div class="job-details">
+            <span class="job-location">📍 Remote / Indore</span>
+            <span class="job-salary">💰 ₹4-7 LPA</span>
+          </div>
+          <p>Create engaging video content for YouTube, social media, and corporate clients using professional editing tools.</p>
+          <div class="job-skills">
+            <span class="skill-tag">Premiere Pro</span>
+            <span class="skill-tag">After Effects</span>
+            <span class="skill-tag">DaVinci</span>
+            <span class="skill-tag">Motion Graphics</span>
+          </div>
+          <a href="contact.html" class="btn btn-outline">Apply Now</a>
+        </div>
+        <div class="job-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="job-header">
+            <h3>UI/UX Designer</h3>
+            <span class="job-type">Full-time</span>
+          </div>
+          <div class="job-details">
+            <span class="job-location">📍 Remote / Indore</span>
+            <span class="job-salary">💰 ₹5-9 LPA</span>
+          </div>
+          <p>Design intuitive and beautiful user interfaces for web and mobile applications with focus on user experience.</p>
+          <div class="job-skills">
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">Adobe XD</span>
+            <span class="skill-tag">Prototyping</span>
+            <span class="skill-tag">User Research</span>
+          </div>
+          <a href="contact.html" class="btn btn-outline">Apply Now</a>
+        </div>
+        <div class="job-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="job-header">
+            <h3>WordPress Developer</h3>
+            <span class="job-type">Full-time</span>
+          </div>
+          <div class="job-details">
+            <span class="job-location">📍 Remote / Indore</span>
+            <span class="job-salary">💰 ₹4-8 LPA</span>
+          </div>
+          <p>Develop custom WordPress themes and plugins, and manage WordPress-based websites for clients.</p>
+          <div class="job-skills">
+            <span class="skill-tag">WordPress</span>
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">WooCommerce</span>
+            <span class="skill-tag">Elementor</span>
+          </div>
+          <a href="contact.html" class="btn btn-outline">Apply Now</a>
+        </div>
+        <div class="job-card" data-aos="fade-up" data-aos-delay="600">
+          <div class="job-header">
+            <h3>Data Analyst</h3>
+            <span class="job-type">Full-time</span>
+          </div>
+          <div class="job-details">
+            <span class="job-location">📍 Remote / Indore</span>
+            <span class="job-salary">💰 ₹5-9 LPA</span>
+          </div>
+          <p>Analyze business data and create insightful dashboards using Power BI, Tableau, and Python.</p>
+          <div class="job-skills">
+            <span class="skill-tag">Power BI</span>
+            <span class="skill-tag">Tableau</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">SQL</span>
+          </div>
+          <a href="contact.html" class="btn btn-outline">Apply Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Culture -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Our Culture</span>
+        <h2 class="section-title">Life at <span class="gradient-text">AMNEXA</span></h2>
+      </div>
+      <div class="culture-grid">
+        <div class="culture-item" data-aos="fade-up" data-aos-delay="100">
+          <span class="culture-icon">🤝</span>
+          <h3>Collaborative Environment</h3>
+          <p>Work in a supportive team environment where ideas are shared and everyone's contribution matters.</p>
+        </div>
+        <div class="culture-item" data-aos="fade-up" data-aos-delay="200">
+          <span class="culture-icon">💡</span>
+          <h3>Innovation First</h3>
+          <p>We encourage experimentation and learning new technologies to stay ahead of the curve.</p>
+        </div>
+        <div class="culture-item" data-aos="fade-up" data-aos-delay="300">
+          <span class="culture-icon">⚖️</span>
+          <h3>Work-Life Balance</h3>
+          <p>We believe in maintaining a healthy work-life balance for our team members.</p>
+        </div>
+        <div class="culture-item" data-aos="fade-up" data-aos-delay="400">
+          <span class="culture-icon">🎯</span>
+          <h3>Impact-Driven Work</h3>
+          <p>Work on projects that make a real difference for our clients and their users.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section" style="background: linear-gradient(180deg, #070b14 0%, #0e1628 100%);">
+    <div class="container" style="text-align:center;" data-aos="fade-up">
+      <span class="section-label">Don't See a Fit?</span>
+      <h2 class="section-title">Send Us Your <span class="gradient-text">Resume</span></h2>
+      <p class="section-subtitle" style="margin:0 auto 36px;">If you're passionate about technology and want to work with us, we'd love to hear from you.</p>
+      <a href="contact.html" class="btn btn-primary">Submit Resume →</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="navbar-logo">
+            <div class="logo-icon">A</div>
+            <div class="logo-text"><span>AMNEXA</span> Technologies</div>
+          </div>
+          <p>Your technology partner for digital growth. We build modern, scalable solutions for growing businesses.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-btn" aria-label="LinkedIn">in</a>
+            <a href="#" class="social-btn" aria-label="Instagram">ig</a>
+            <a href="https://wa.me/918349888244" class="social-btn" aria-label="WhatsApp">wa</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Web Development</a></li>
+            <li><a href="services.html">App Development</a></li>
+            <li><a href="services.html">Data Analytics</a></li>
+            <li><a href="services.html">Video Editing</a></li>
+            <li><a href="services.html">WordPress</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="technologies.html">Technologies</a></li>
+            <li><a href="industries.html">Industries</a></li>
+            <li><a href="career.html">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms & Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 AMNEXA TECHNOLOGIES. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Buttons -->
+  <a href="https://wa.me/918349888244" class="whatsapp-btn" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">💬</a>
+  <a href="tel:+918349888244" class="call-btn" aria-label="Call Us">📞</a>
+  <button class="back-to-top" id="backToTop" aria-label="Back to Top">↑</button>
+  <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle Dark Mode">🌙</button>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
